@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs - LegalEase Solutions</title>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        /* Same CSS styles as LegalEase Solutions website */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #007bff;
+            margin-bottom: 10px;
+        }
+        .faq-item {
+            margin-bottom: 20px;
+        }
+        .question {
+            font-weight: bold;
+            color: #333;
+            cursor: pointer;
+        }
+        .answer {
+            display: none;
+            margin-top: 5px;
+            color: #666;
+        }
+    </style>
+    <script>
+        // JavaScript to toggle the visibility of answers
+        function toggleAnswer(element) {
+            var answer = element.nextElementSibling;
+            if (answer.style.display === "block") {
+                answer.style.display = "none";
+            } else {
+                answer.style.display = "block";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Frequently Asked Questions</h1>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">What services do you offer?</div>
+            <div class="answer">At LegalEase Solutions, we offer a wide range of services including legal consultations, document drafting and review, contract negotiation, litigation support, legal research, and more.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">How can I contact you?</div>
+            <div class="answer">You can contact us by email at legalease@gmail.com or by phone at 9000000000.</div>
+        </div>
+
+        <div class="faq-item">
+            <div class="question" onclick="toggleAnswer(this)">Do you provide legal advice?</div>
+            <div class="answer">LegalEase Solutions offers legal information and resources, but we do not provide legal advice. We recommend consulting with a qualified attorney for specific legal advice related to your situation.</div>
+        </div>
+
+        <!-- Add more questions and answers here -->
+
+    </div>
+</body>
+</html>
